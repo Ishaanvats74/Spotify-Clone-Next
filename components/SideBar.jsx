@@ -43,7 +43,13 @@ function SideBar() {
 
 
             {/* Playlists....... */}
-            
+        <p className='hover:text-white cursor-pointer'>Playlists Name..........</p>
+        <p className='hover:text-white cursor-pointer'>Playlists Name..........</p>
+        <p className='hover:text-white cursor-pointer'>Playlists Name..........</p>
+        <p className='hover:text-white cursor-pointer'>Playlists Name..........</p>
+        <p className='hover:text-white cursor-pointer'>Playlists Name..........</p>
+        <p className='hover:text-white cursor-pointer'>Playlists Name..........</p>
+
 
         </di>
     </div>

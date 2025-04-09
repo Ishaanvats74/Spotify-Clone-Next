@@ -3,14 +3,12 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
+    <div className="bg-black h-screen overflow-hidden">
+      {/* <Head>
         <title>Spotify Clone </title>
-      </Head>
+      </Head> */}
 
-      <h1></h1>
-
-      <main>
+      <main className="">
         {/* SideBar */}
         <SideBar />
         {/* Center */}
