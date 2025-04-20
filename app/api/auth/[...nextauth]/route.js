@@ -17,7 +17,7 @@ async function refreshAccessToken(token) {
       refreshToken: refreshedToken.refresh_token ?? token.refreshToken,
     };
   } catch (error) {
-    console.error("Error refreshing access token:", error);
+    console.error("Error refreshing access token:", error.message, "Token:", token);
     return {
       ...token,
       error: "RefreshAccessTokenError",
@@ -55,6 +55,7 @@ async function refreshAccessToken(token) {
       }
 
       console.log("Access token has expired, refreshing...");
+      console.log("Account expires_at:", account?.expires_at);
       return await refreshAccessToken(token);
     },
 
